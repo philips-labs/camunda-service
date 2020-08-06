@@ -1,0 +1,13 @@
+---
+applications:
+  - name: camunda-service
+    path: ./build/libs/camunda-service.jar
+    instances: ((instances))
+    memory: 1G
+    services:
+      - camunda-db-((env))
+    buildpacks:
+      - "https://github.com/cloudfoundry/java-buildpack.git"
+    env:
+      JAVA_OPTS: "-Djava.security.egd=file:/dev/./urandom"
+      SPRING_PROFILES_ACTIVE: "cloud, ((env))"

@@ -1,0 +1,4 @@
+spring:
+  datasource:
+    username: kevingaasch
+    url: jdbc:postgresql://localhost/kevingaasch

@@ -1,0 +1,1 @@
+io.pivotal.cfenv.spring.boot.CfEnvProcessor=com.philips.src.ai.platform.camunda.HSDPDatabaseConfig
