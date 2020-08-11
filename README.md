@@ -48,6 +48,13 @@ Deploy to CF:
 ```
 Replace ```camunda-service-dev``` with any preferred subdomain of .cloud.pcftest.com
 
-## **4. License**
+## **4. Import Workflows**
+Upload workflows for example use cases:
+* Open one of the workflows (`workflows` dir) in Modeler, e.g. *SleepStudy.bpmn*
+* Click the "Deploy current diagram" button to upload the workflow to the HSDP-deployed instance
+    * The *__REST Endpoint__* field should be `http://camunda-service-dev.cloud.pcftest.com//engine-rest`
+    * The *__Deployment Name__* field should be "SleepStudy", or similar
+
+## **5. License**
 
 Copyright (c) 2019-2020 Respironics Inc, a Philips company
